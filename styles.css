@@ -1,0 +1,27 @@
+@import url('https://fontlibrary.org//face/steps-mono');
+
+
+.logo{
+    font-family: 'StepsMonoRegular';
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+.purp{
+    width: 450px;
+    height: 900px;
+} 
+input{
+    border-color: #E5E7EB
+}
+
+input:invalid {
+    border-color: #ff6565;
+  }
+  
+  input:valid {
+    border-color: green;
+  }
