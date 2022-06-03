@@ -1,6 +1,5 @@
 @import url('https://fontlibrary.org//face/steps-mono');
 
-
 .logo{
     font-family: 'StepsMonoRegular';
 }
@@ -8,15 +7,25 @@
 body{
     display: flex;
     flex-direction: row;
+    flex-flow: row wrap;
+    background-color: purple;
+    justify-content: center;
+    width: 100vw;
+    height:100vh;
 }
 
-.purp{
-    max-width: 42%;
-    height: auto;
+.lotus{
+    height:10vh;
 } 
 
+.hold{
+    background-color: rgb(231, 110, 29);
+    max-width: 42%;
+    height: auto;
+}
+
 input{
-    border-color: #E5E7EB
+    border-color: #E5E7EB;
 }
 
 input:invalid {
@@ -32,3 +41,44 @@ input:focus{
     box-shadow: 5px 5px;
 }
 
+.images{
+    background-image: url(./Images/Exp.avif);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 40vw;
+}
+
+.logo{
+    flex-flow: row wrap;
+    display: flex;
+    height:auto;
+    background-color: transparent;
+    position: relative;
+    top: 20vh;
+    gap: 1vw;
+    padding: 15px 0;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media only screen and (max-width: 600px)  {
+    body{
+        flex-flow: column;
+        height: auto;
+        text-align: center;
+    }
+    .images{
+        width: 100vw;
+        height:15vh;
+        display: flex;
+        background-size: 100vw;
+    }
+    .logo{
+        width: 100vw;
+        position: static;
+        gap: 10px;
+    }
+}
