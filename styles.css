@@ -11,9 +11,10 @@ body{
 }
 
 .purp{
-    width: 450px;
-    height: 900px;
+    max-width: 42%;
+    height: auto;
 } 
+
 input{
     border-color: #E5E7EB
 }
@@ -22,6 +23,12 @@ input:invalid {
     border-color: #ff6565;
   }
   
-  input:valid {
+input:valid {
     border-color: green;
-  }
+}
+
+input:focus{
+    border-color: rgb(76, 76, 250);
+    box-shadow: 5px 5px;
+}
+
